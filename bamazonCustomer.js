@@ -7,7 +7,7 @@ var connection = mysql.createConnection({
 	port: 3306,
 
 	user: "root",
-	password: "Spotogo31!",
+	password: "",
 	database: "bamazon_DB"
 });
 
@@ -33,7 +33,7 @@ function promptUserPurchase() {
 		{
 			type: 'input',
 			name: 'item_id',
-			message: 'Please enter the Item ID which you would like to purchase.',
+			message: 'ID # of the product you would like to buy?',
 			validate: validateInput,
 			filter: Number
 		},
